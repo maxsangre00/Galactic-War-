@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>MedievalMax</title>
+</head>
+<body>
+
+  
+
+<div class="app">
+  <div class="container" id="app-root">
+    <!-- Screens will be injected by JS -->
+  </div>
+
+  <div class="health-bar">
+    <div class="health-bar-inner" style="width: 100%; background-color: green;"></div>
+  </div>
+
+  <div id="coinArea" class="coin-area"></div>
+  <audio id="diceSound" src="sonido/dado.mp3" preload="auto"></audio>
+
+  <!-- Pantalla de batalla -->
+  <div id="battleScreen" style="display:none;" class="game-layout">
+    <div id="boardContainer"></div>
+
+    <div class="side-panel">
+      <div id="controls">
+        <button id="rollBtn">Tirar Dado</button>
+        <button id="endTurn">Finalizar Turno</button>
+      </div>
+
+      <!-- Ventana de log, inicialmente oculta -->
+      <div id="logWindow" style="display:none;">
+        <div id="logContent"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
